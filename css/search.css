@@ -1,0 +1,254 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+h2{
+	font-size: 10vmin;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    letter-spacing: 2px;
+}
+h2 img{
+	width: 8vmin;
+}
+
+/*menu*/
+.menu{
+	animation-delay: 1000ms;
+}
+.menu ul{
+	list-style: none;
+}
+.menu ul li{
+	position: relative;
+	display: inline-block;
+	animation-delay: 1200ms;
+	animation-duration: 1000ms;
+
+}
+.menu a{
+	padding: 1em 1em 0 1em;
+	text-decoration: none;
+	color: #111;
+	font-size: 5vmin;
+	font-family: 'Jua', sans-serif;
+	transition: all 200ms linear;
+}
+.menu a:hover{
+	color: #333;
+}
+/*searchbar*/
+.searchbar{
+	margin-top:1em;
+	width:100%;
+	height:2em;
+	background-color: #333;
+	animation-delay: 1200ms;
+  animation-duration: 1000ms;
+}
+
+#search-icon{
+    color: #fff;
+	text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.margin{
+	margin-left:10px;
+}
+input[type="search"]{
+  width: 50%;
+  padding: .5em;
+  outline:none;
+  border:none;
+  border-radius: 20px;
+  background:  #fff;
+  color: #111;
+}
+.container {
+  width: 100%;
+  padding: 0;
+  animation-delay: 1200ms;
+  animation-duration: 1000ms;
+}
+.color-name{
+	font-family: 'Jua', sans-serif;
+	font-size:5vmin;
+	margin:20px 0 0 60px;
+}
+.Orange{
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  max-width: 1400px;
+  margin:0px 0 auto;
+}
+.box{
+	-ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+	width:40px;
+	height: 70px;
+	background-color: #333;
+
+}
+.box:hover > p{
+	transform: scale(1.15);
+}
+.box p{
+	transform: scale(1);
+	transition: transform 200ms ease;
+	font-family:sans-serif;
+	font-size:1em;
+	text-align: center;
+	margin-top:25px;
+
+}
+.Orange .box1{
+	background-color:#FF8C00;
+}
+.Orange .box2{
+	background-color: #FF4500;
+}
+.Orange .box3{
+	background-color:#FF6347;
+}
+.Orange .box4{
+	background-color:#FFA500;
+}
+
+.color-menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+.Yellow .box1{
+	background-color: #FFD700;
+}
+.Yellow .box2{
+	background-color: #FFFF00;
+}
+.Yellow .box3{
+	background-color: #F0E68C;
+}
+.Yellow .box4{
+	background-color: #FFFACD;
+}
+.Purple .box1{
+	background-color: #663399;
+}
+.Purple .box2{
+	background-color: #BA55D3;
+}
+.Purple .box3{
+	background-color: #DA70D6;
+}
+.Purple .box4{
+	background-color: #D8BFD8;
+}
+.Green .box1{
+	background-color:#556B2F;
+}
+.Green .box2{
+	background-color:#98FB98;
+}
+.Green .box3{
+	background-color:#2E8B57;
+}
+.Green .box4{
+	background-color:#7FFF00;
+}
+.Red .box1{
+	background-color: #ff0000;
+}
+.Red .box2{
+	background-color:#CD5C5C ;
+}
+.Red .box3{
+	background-color:#DC143C ;
+}
+.Red .box4{
+	background-color:#FA8072 ;
+}
+.Pink .box1{
+	background-color:#FFC0CB;
+}
+.Pink .box2{
+	background-color:#FF1493;
+}
+.Pink .box3{
+	background-color:#DB7093;
+}
+.Pink .box4{
+	background-color:#FF69B4;
+}
+.Brown .box1{
+	background-color:#A52A2A;
+}
+.Brown .box2{
+	background-color:#8B4513;
+}
+.Brown .box3{
+	background-color:#D2691E;
+}
+.Brown .box4{
+	background-color:#CD853F;
+}
+.Blue .box1{
+	background-color:#1E90FF;
+}
+.Blue .box2{
+	background-color:#4682B4;
+}
+.Blue .box3{
+	background-color:#B0E0E6;
+}
+.Blue .box4{
+	background-color:#40E0D0;
+}
+.White .box{
+	background-color:#F5F5F5;
+}
+.White .box{
+	background-color:#F5F5DC;
+}
+.White .box{
+	background-color:#FFFFF0;
+}
+.White .box{
+	background-color:#FAEBD7;
+}
+.Gray .box{
+	background-color:#C0C0C0;
+}
+.Gray .box{
+	background-color:#A9A9A9;
+}
+.Gray .box{
+	background-color:#778899;
+}
+.Gray .box{
+	background-color:#696969;
+}
+
+
+
+
+
+
+
+
+

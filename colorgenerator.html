@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/palette.png">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <!-- jquery google cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- animation css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <!-- icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Pallete</title>
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="css/coolors.css">
+</head>
+
+<body>
+    <!-- company's title with logo -->
+    <h2 class="animated bounceInDown"><a href="#" title="Pallete"><img src="images/palette.png"
+                alt="pallete"></a>PALLETE</h2>
+    <!-- note -->
+    <p class="animated bounceInLeft">Click on spacebar to generate Colors.</p>
+    <!-- menu bar -->
+    <div class="menu animated fadeIn">
+        <ul>
+            <li class="animated tada"><a href="#">Generate</a></li>
+            <!-- same page -->
+            <li class="animated tada"><a href="expnew.html" target="_blank">Explore</a></li>
+            <li class="animated tada"><a href="search.html" target="_blank">Search</a></li>
+            <!-- right menu settings -->
+            <li class="animated tada setting"><i class="fa fa-cog" aria-hidden="true"></i></li>
+            <p class="isolation">Isolation</p>
+            <!-- Isolation -->
+            <p class="no-isolation">No Isolation</p>
+            <!-- No isolation -->
+        </ul>
+    </div> <!-- menu end -->
+    <div class="wrap">
+        <!-- wrap start -->
+        <!-- 1st Panel -->
+        <div id="parent" class="animated fadeIn layer togglewidth">
+            <div class="wrapper animated bounceIn">
+                <h1 id="colour">#EAC8CA</h1>
+                <button id="change" type="button" onclick="changeColor('#change', '#colour', '#parent')">Change</button>
+            </div>
+        </div>
+        <!-- 2nd Panel -->
+        <div id="parent2" class="animated fadeIn layer togglewidth">
+            <div class="wrapper animated bounceIn">
+                <h1 id="colour2">#F2D5F8</h1>
+                <button id="change2" type="button"
+                    onclick="changeColor('#change2', '#colour2', '#parent2')">Change</button>
+            </div>
+        </div>
+        <!-- 3rd Panel -->
+        <div id="parent3" class="animated fadeIn layer togglewidth">
+            <div class="wrapper animated bounceIn">
+                <h1 id="colour3">#E6C0E9</h1>
+                <button id="change3" type="button"
+                    onclick="changeColor('#change3', '#colour3', '#parent3')">Change</button>
+            </div>
+        </div>
+        <!-- 4th Panel -->
+        <div id="parent4" class="animated fadeIn layer togglewidth">
+            <div class="wrapper animated bounceIn">
+                <h1 id="colour4">#BFABCB</h1>
+                <button id="change4" type="button"
+                    onclick="changeColor('#change4', '#colour4', '#parent4')">Change</button>
+            </div>
+        </div>
+        <!-- Panel 5 -->
+        <div id="parent5" class="animated fadeIn layer togglewidth">
+            <div class="wrapper animated bounceIn">
+                <h1 id="colour5">#8D89A6</h1>
+                <button id="change5" type="button"
+                    onclick="changeColor('#change5', '#colour5', '#parent5')">Change</button>
+            </div>
+        </div> <!-- parent 5 end -->
+    </div> <!-- wrap -->
+</body>
+<script type="text/javascript">
+    //Jquery function for settings isolation and no-isolation in jquery
+    $(function () {
+        //BY default both options are hidden
+        $(".isolation").hide();
+        $(".no-isolation").hide();
+        $(".setting").on('click', function () {
+            $(".isolation, .no-isolation").toggle(); //Shows/hides when clicked on settings
+        });
+        //it created gap between the panels
+        $(".isolation").on('click', function () {
+            $(".togglewidth").css('width', '16vw'); //giving css width to class
+            $(".layer").toggleClass('.togglewidth'); //Applying that class
+            $(".isolation").hide();
+            $(".no-isolation").hide();
+        });
+        //it hides the gap between the panels
+        $(".no-isolation").on('click', function () {
+            $(".togglewidth").css('width', '20vw'); //Giving css width to class
+            $(".layer").toggleClass('.togglewidth'); //Apllying that class
+            $(".isolation").hide();
+            $(".no-isolation").hide();
+        });
+    });
+
+    //spacebar click function
+    //selecting id in a variable for keycode function.
+    var button1 = document.getElementById("change");
+    var button2 = document.getElementById("change2");
+    var button3 = document.getElementById("change3");
+    var button4 = document.getElementById("change4");
+    var button5 = document.getElementById("change5");
+    //when spacebar is clicked these 5 buttons are clicked
+    document.onkeyup = function (e) {
+        if (e.keyCode == 32) { // spacebar keycode = 32
+            button1.click(); //change
+            button2.click(); //change2
+            button3.click(); //change3
+            button4.click(); //change4
+            button5.click(); //change5
+        } else if (e.ctrlKey && e.keyCode == 73) {
+            alert("ctrl + i");
+        }
+
+    };
+    //JS function for all panels to generate random colors
+    generator = () => {
+        // .tostring because characters and numbers can come //Math.random() creates random numbers
+        newColour = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+        if (newColour.length < 7)
+            generator(); //calling function
+        else
+            return newColour;
+    }
+    function changeColor(buttonId, headingId, divId) {
+        let newColour = generator(); //Calling generator function when clicking on button
+        $(divId).css("background", newColour); //Changing the panel color
+        //button1.style.color = newColour; //alternative to below
+        $(buttonId).css('color', newColour); //Changing the button-text color "change"
+        $(headingId).text(newColour); //Name of color generated to copy
+    }
+</script>
+
+</html>

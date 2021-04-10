@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="images/palette.png">
+<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+	<!-- jquery google cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- animation css -->
+<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+<!-- icons -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- external css -->
+<link rel="stylesheet" type="text/css" href="css/search.css" />
+</head>
+<body>
+<h2 class="animated bounceInDown"><a href="#" title="Pallete"><img src="images/palette.png" alt="pallete"></a>PALLETE</h2>
+
+<div class="menu animated fadeIn">
+<ul>
+<li class="animated tada"><a href="colorgenerator.html" target="_blank">Generate</a></li>
+<li class="animated tada"><a href="expnew.html" target="_blank">Explore</a></li>
+<li class="animated tada"><a href="#" target="_blank">Search</a></li>
+</ul>
+</div>
+<!-- searchbar -->
+<div class="searchbar animated fadeIn">
+	<input type="search" id="myInput" value="" name="keyword" oninput="" placeholder="Search" autofocus="" />
+   <i class="fa fa-search margin" id="search-icon"></i>
+</div>
+<!-- rows -->
+<div class="container animated fadeIn">
+	<div class="rows">
+	<h3 class="color-name">Orange</h3>
+	<div class="Orange color-menu">
+		<div class="box1 box" title="DarkOrange"><p>#FF8C00</p></div>
+		<div class="box2 box" title="OrangeRed"><p>#FF4500</p></div>
+		<div class="box3 box" title="Tomato"><p>#FF6347</p></div>
+		<div class="box4 box" title="Orange"><p>#FFA500</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Yellow</h3>
+	<div class="Yellow color-menu">
+		<div class="box1 box" title="Gold"><p>#FFD700</p></div>
+		<div class="box2 box" title="Yellow"><p>#FFFF00</p></div>
+		<div class="box3 box" title="Khaki"><p>#F0E68C</p></div>
+		<div class="box4 box" title="LemonChiffon"><p>#FFFACD</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Purple</h3>
+	<div class="Purple color-menu">
+		<div class="box1 box" title="RebeccaPurple"><p>#663399</p></div>
+		<div class="box2 box" title="MediumOrchid"><p>#BA55D3</p></div>
+		<div class="box3 box" title="Orchid"><p>#DA70D6</p></div>
+		<div class="box4 box" title="Thistle"><p>#D8BFD8</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Green</h3>
+	<div class="Green color-menu">
+		<div class="box1 box" title="DarkOliveGreen"><p>#556B2F</p></div>
+		<div class="box2 box" title="PaleGreen"><p>#98FB98</p></div>
+		<div class="box3 box" title="SeaGreen"><p>#2E8B57</p></div>
+		<div class="box4 box" title="ChartReuse"><p>#7FFF00</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Red</h3>
+	<div class="Red color-menu">
+		<div class="box1 box" title="Red"><p>#FF0000</p></div>
+		<div class="box2 box" title="IndianRed"><p>#CD5C5C</p></div>
+		<div class="box3 box" title="Crimson"><p>#DC143C</p></div>
+		<div class="box4 box" title="Salmon"><p>#FA8072</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Pink</h3>
+	<div class="Pink color-menu">
+		<div class="box1 box" title="Pink"><p>#FFC0CB</p></div>
+		<div class="box2 box" title="DeepPink"><p>#FF1493</p></div>
+		<div class="box3 box" title="PaleVioletRed"><p>#DB7093</p></div>
+		<div class="box4 box" title="HotPink"><p>#FF69B4</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Brown</h3>
+	<div class="Brown color-menu">
+		<div class="box1 box" title="Brown"><p>#A52A2A</p></div>
+		<div class="box2 box" title="SaddleBrown"><p>#8B4513</p></div>
+		<div class="box3 box" title="Chocolate"><p>#D2691E</p></div>
+		<div class="box4 box" title="Peru"><p>#CD853F</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Blue</h3>
+	<div class="Blue color-menu">
+		<div class="box1 box" title="DodgerBlue"><p>#1E90FF</p></div>
+		<div class="box2 box" title="SteelBlue"><p>#4682B4</p></div>
+		<div class="box3 box" title="PowderBlue"><p>#B0E0E6</p></div>
+		<div class="box4 box" title="Turquoise"><p>#40E0D0</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">White</h3>
+	<div class="White color-menu">
+		<div class="box1 box" title="WhiteSmoke"><p>#F5F5F5</p></div>
+		<div class="box2 box" title="Beige"><p>#F5F5DC</p></div>
+		<div class="box3 box" title="Ivory"><p>#FFFFF0</p></div>
+		<div class="box4 box" title="AntiqueWhite"><p>#FAEBD7</p></div>
+	</div>
+</div>
+<div class="rows">
+	<h3 class="color-name">Gray</h3>
+	<div class="Gray color-menu">
+		<div class="box1 box" title="Silver"><p>#C0C0C0</p></div>
+		<div class="box2 box" title="DarkGray"><p>#A9A9A9</p></div>
+		<div class="box3 box" title="LightSlateGray"><p>#778899</p></div>
+		<div class="box4 box" title="DimGray"><p>#696969</p></div>
+	</div>
+</div>
+<!-- <div class="rows">
+	<h3 class="color-name"></h3>
+	<div class=" color-menu">
+		<div class="box1 box" title=""><p></p></div>
+		<div class="box2 box" title=""><p></p></div>
+		<div class="box3 box" title=""><p></p></div>
+		<div class="box4 box" title=""><p></p></div>
+	</div>
+</div> -->
+
+
+
+<div class="margin-below" style="height: 40px;"></div>
+
+</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("input").hide();
+		$("#search-icon").on('click', function() {
+			$(this).toggleClass("margin");
+			$("input").toggle(600);
+		});
+	});
+</script>
+
+
+<script type="text/javascript">
+$("#myInput").on("input", function(){
+$(this).show();
+});
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".container .rows").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+</script>
+
+</html>

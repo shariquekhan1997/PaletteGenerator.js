@@ -1,0 +1,176 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+
+}
+.setting{
+	float: right;
+}
+.isolation, .no-isolation {
+	float: right;
+	cursor: pointer;
+}
+
+.wrapper{
+	margin-top:50%;
+	text-align: center;
+	animation-delay: 1500ms;
+}
+h1{
+	font-weight: bold;
+	font-size: 6vmin;
+	height: 1.5em;
+	color: #1f2d3d;
+	font-family: cursive;
+}
+#change,#change2,#change3,#change4,#change5{
+	padding:1em 3em;
+	border:none;
+	outline:none;
+	font-weight: lighter;
+	font-size: 1em;
+	font-family: cursive;
+	background: #1f2d3d;
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	/*display: none;*/
+}
+body, button#change, button#change2, button#change3, button#change4, button#change5{
+	transition: all 400ms ease-in-out;
+}
+.layer{
+	position: absolute;
+	/*top:12vw;*/
+	top: 27%;
+	bottom:0;
+	width:20vw;
+}
+
+#parent{
+	left:0;
+	background:#EAC8CA;
+}
+#parent2{
+	left:20vw;
+	background:#F2D5F8;
+}
+#parent3{
+	left:40vw;
+	background:#E6C0E9;
+}
+#parent4{
+	left:60vw;
+	background:#BFABCB;
+}
+#parent5{
+	left:80vw;
+	background:#8D89A6;
+}
+/*.lock1{
+	position: absolute;
+	bottom:-100px;
+	left:40%;
+	font-size: 3em;
+	color: #1f2d3d;
+	cursor: pointer;
+	transition: all 500ms ease;
+	animation-delay: 1500ms;
+}
+.lock1:hover{
+	color: #7A768E;
+}*/
+h2{
+	font-size: 10vmin;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    letter-spacing: 2px;
+}
+h2 img{
+	width: 8vmin;
+}
+p{
+	height: 1.65em;
+	color: #1f2d3d;
+	font-family: 'Jua', sans-serif;
+	margin-left: 5vw;
+	animation-delay: 1000ms;
+}
+/*menu*/
+.menu{
+	animation-delay: 1000ms;
+}
+.menu ul{
+	list-style: none;
+
+}
+.menu ul li{
+	position: relative;
+	display: inline-block;
+	animation-delay: 1200ms;
+	animation-duration: 1000ms;
+}
+.menu a{
+	padding: 1em 1em 0 1em;
+	text-decoration: none;
+	color: #111;
+	font-size: 5vmin;
+	font-family: 'Jua', sans-serif;
+	transition: all 200ms linear;
+}
+.setting{
+	padding: 0 1em 1em 1em;
+	text-decoration: none;
+	color: #111;
+	font-size: 5vmin;
+	font-family: 'Jua', sans-serif;
+	transition: all 200ms linear;
+}
+.menu a:hover{
+	color: #333;
+}
+
+.theme{
+	position: absolute;
+	top: 10%;
+	left:80%;
+	border: 1px solid #333;
+	animation-delay: 1000ms;
+}
+
+
+/*.togglewidth{
+	width:16vw;
+}
+*/
+
+
+
+@media (max-width: 1097px){
+	#change,#change2,#change3,#change4,#change5{
+		padding:.7em 1.5em;
+	}
+	h1{
+		font-size: 5vmin;
+	}
+}
+@media (max-width: 768px){
+	h1{
+		writing-mode: tb-rl;
+		margin-bottom: 5em;
+		margin-left: 1em;
+		font-size: 6vmin;
+	}
+	#change,#change2,#change3,#change4,#change5{
+		padding: .5em;
+	}
+	.menu ul li a{
+		font-size: 6vmin;
+	}
+}
+
