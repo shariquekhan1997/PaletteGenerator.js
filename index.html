@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <!-- company's title with logo -->
     <h2 class="animated bounceInDown" onclick="changeAllColorsForMobile()"><a href="#" title="Pallete"><img
                 src="images/palette.png" alt="palette"></a>PALETTE</h2>
@@ -120,10 +120,26 @@
             button3.click(); //change3
             button4.click(); //change4
             button5.click(); //change5
-        } else if (e.ctrlKey && e.keyCode == 73) {
-            alert("ctrl + i");
         }
     };
+
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
     //for mobile
     changeAllColorsForMobile = () => {
         let functionName = "changeAllColorsForMobile";
