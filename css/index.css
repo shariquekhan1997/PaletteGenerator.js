@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "cursive !important";
+	font-family: 'Jua', sans-serif;
 }
 
 body {
@@ -9,90 +9,6 @@ body {
 	height: 100vh;
 	overflow-x: hidden;
 }
-
-.setting {
-	float: right;
-}
-
-.isolation, .no-isolation {
-	float: right;
-	cursor: pointer;
-}
-
-.wrapper {
-	margin-top: 50%;
-	text-align: center;
-	animation-delay: 1500ms;
-}
-
-h1 {
-	font-weight: bold;
-	font-size: 6vmin;
-	height: 1.5em;
-	color: #1f2d3d;
-}
-
-#change, #change2, #change3, #change4, #change5 {
-	padding: 1em 3em;
-	border: none;
-	outline: none;
-	font-weight: lighter;
-	font-size: 1em;
-	background: #1f2d3d;
-	color: #fff;
-	border-radius: 20px;
-	cursor: pointer;
-}
-
-body, button#change, button#change2, button#change3, button#change4, button#change5 {
-	transition: all 400ms ease-in-out;
-}
-
-.layer {
-	position: absolute;
-	top: 27%;
-	bottom: 0;
-	width: 20vw;
-}
-
-#parent {
-	left: 0;
-	background: #EAC8CA;
-}
-
-#parent2 {
-	left: 20vw;
-	background: #F2D5F8;
-}
-
-#parent3 {
-	left: 40vw;
-	background: #E6C0E9;
-}
-
-#parent4 {
-	left: 60vw;
-	background: #BFABCB;
-}
-
-#parent5 {
-	left: 80vw;
-	background: #8D89A6;
-}
-
-/*.lock1{
-	position: absolute;
-	bottom:-100px;
-	left:40%;
-	font-size: 3em;
-	color: #1f2d3d;
-	cursor: pointer;
-	transition: all 500ms ease;
-	animation-delay: 1500ms;
-}
-.lock1:hover{
-	color: #7A768E;
-}*/
 
 h2 {
 	font-size: 10vmin;
@@ -153,17 +69,90 @@ p {
 	color: #333;
 }
 
+.setting {
+	float: right;
+}
+
+.isolation, .no-isolation {
+	float: right;
+	cursor: pointer;
+}
+
+.wrapper {
+	margin-top: 50%;
+	text-align: center;
+	animation-delay: 1500ms;
+}
+
+.colorName {
+	font-weight: bold;
+	font-size: 6vmin;
+	height: 1.5em;
+	color: #1f2d3d;
+	font-family: 'Jua', sans-serif;
+	margin-left: 0;
+}
+
+#change, #change2, #change3, #change4, #change5 {
+	padding: 1em 3em;
+	border: none;
+	outline: none;
+	font-weight: lighter;
+	font-size: 1em;
+	background: #1f2d3d;
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	font-family: 'Jua', sans-serif;
+}
+
+body, button#change, button#change2, button#change3, button#change4, button#change5 {
+	transition: all 400ms ease-in-out;
+}
+
+.layer {
+	position: absolute;
+	top: 25%;
+	bottom: 0;
+	width: 20vw;
+}
+
+#parent {
+	left: 0;
+	background: #EAC8CA;
+}
+
+#parent2 {
+	left: 20vw;
+	background: #F2D5F8;
+}
+
+#parent3 {
+	left: 40vw;
+	background: #E6C0E9;
+}
+
+#parent4 {
+	left: 60vw;
+	background: #BFABCB;
+}
+
+#parent5 {
+	left: 80vw;
+	background: #8D89A6;
+}
+
 @media (max-width: 1097px) {
 	#change, #change2, #change3, #change4, #change5 {
 		padding: .7em 1.5em;
 	}
-	h1 {
+	.colorName {
 		font-size: 5vmin;
 	}
 }
 
 @media (max-width: 768px) {
-	h1 {
+	.colorName {
 		writing-mode: tb-rl;
 		margin-bottom: 5em;
 		margin-left: 1em;
