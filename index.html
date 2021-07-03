@@ -40,14 +40,14 @@
     <div class="wrap">
         <!-- wrap start -->
         <!-- 1st Panel -->
-        <div id="parent" class="animated fadeIn layer togglewidth">
+        <div id="parent" class="parent1 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
                 <p class="colorName" id="colour">#EAC8CA</p>
                 <button id="change" type="button" onclick="changeColor('#change', '#colour', '#parent')">Change</button>
             </div>
         </div>
         <!-- 2nd Panel -->
-        <div id="parent2" class="animated fadeIn layer togglewidth">
+        <div id="parent2" class="parent2 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
                 <p class="colorName" id="colour2">#F2D5F8</p>
                 <button id="change2" type="button"
@@ -55,7 +55,7 @@
             </div>
         </div>
         <!-- 3rd Panel -->
-        <div id="parent3" class="animated fadeIn layer togglewidth">
+        <div id="parent3" class="parent3 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
                 <p class="colorName" id="colour3">#E6C0E9</p>
                 <button id="change3" type="button"
@@ -63,7 +63,7 @@
             </div>
         </div>
         <!-- 4th Panel -->
-        <div id="parent4" class="animated fadeIn layer togglewidth">
+        <div id="parent4" class="parent4 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
                 <p class="colorName" id="colour4">#BFABCB</p>
                 <button id="change4" type="button"
@@ -71,7 +71,7 @@
             </div>
         </div>
         <!-- Panel 5 -->
-        <div id="parent5" class="animated fadeIn layer togglewidth">
+        <div id="parent5" class="parent5 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
                 <p class="colorName" id="colour5">#8D89A6</p>
                 <button id="change5" type="button"
@@ -123,23 +123,23 @@
         }
     };
 
-    document.onkeydown = function (e) {
-        if (event.keyCode == 123) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-            return false;
-        }
-    }
+    // document.onkeydown = function (e) {
+    //     if (event.keyCode == 123) {
+    //         return false;
+    //     }
+    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    //         return false;
+    //     }
+    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    //         return false;
+    //     }
+    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    //         return false;
+    //     }
+    //     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    //         return false;
+    //     }
+    // }
     //for mobile
     changeAllColorsForMobile = () => {
         let functionName = "changeAllColorsForMobile";
