@@ -61,14 +61,11 @@ p {
 	font-size: 5vmin;
 	font-family: 'Jua', sans-serif;
 	transition: all 200ms linear;
+	float: right;
 }
 
 .menu a:hover {
 	color: #333;
-}
-
-.setting {
-	float: right;
 }
 
 .isolation, .no-isolation {
