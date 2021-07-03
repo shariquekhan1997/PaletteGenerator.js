@@ -20,10 +20,10 @@
 
 <body>
     <!-- company's title with logo -->
-    <h2 class="animated bounceInDown"><a href="#" title="Pallete"><img src="images/palette.png"
-                alt="palette"></a>PALETTE</h2>
+    <h2 class="animated bounceInDown" onclick="changeAllColorsForMobile()"><a href="#" title="Pallete"><img
+                src="images/palette.png" alt="palette"></a>PALETTE</h2>
     <!-- note -->
-    <p class="animated bounceInLeft">Click on spacebar to generate Colors.</p>
+    <p class="animated bounceInLeft">Click on spacebar or PALETTE to generate Colors.</p>
     <!-- menu bar -->
     <div class="menu animated fadeIn">
         <ul>
@@ -115,7 +115,7 @@
     //when spacebar is clicked these 5 buttons are clicked
     document.onkeyup = function (e) {
         if (e.keyCode == 32) { // spacebar keycode = 32
-            button1.click(); //change
+            button1.click(); //change1
             button2.click(); //change2
             button3.click(); //change3
             button4.click(); //change4
@@ -124,6 +124,19 @@
             alert("ctrl + i");
         }
     };
+    //for mobile
+    changeAllColorsForMobile = () => {
+        let functionName = "changeAllColorsForMobile";
+        try {
+            button1.click(); //change1
+            button2.click(); //change2
+            button3.click(); //change3
+            button4.click(); //change4
+            button5.click(); //change5
+        } catch (error) {
+            alert(functionName + ": " + error.message);
+        }
+    }
     //JS function for all panels to generate random colors
     generator = () => {
         // .tostring because characters and numbers can come //Math.random() creates random numbers
