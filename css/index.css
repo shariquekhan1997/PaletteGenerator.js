@@ -148,12 +148,6 @@ body, button#change, button#change2, button#change3, button#change4, button#chan
 }
 
 @media (max-width: 768px) {
-	/* .colorName {
-		writing-mode: tb-rl;
-		margin-bottom: 5em;
-		margin-left: 1em;
-		font-size: 6vmin;
-	} */
 	button[type="button"] {
 		padding: .5em;
 	}
