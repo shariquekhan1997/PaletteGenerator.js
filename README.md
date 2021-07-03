@@ -14,6 +14,9 @@ Click on spacebar to change all the colors to create your custom palette and use
 ## Isolate Mode :barber: :barber:
 ![Isolate](https://i.ibb.co/txfcmS1/isolate.png)
 
+
+## We are live on Github Page! 👓
+[Github Page](https://shariquekhan1997.github.io/PaletteGenerator.js/)
 ## Code of Conduct :scroll:
 
 This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [shariquekhan69.sk@gmail.com](mailto:shariquekhan69.sk@gmail.com).
