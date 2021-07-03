@@ -15,21 +15,22 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Pallete</title>
     <!-- external css -->
-    <link rel="stylesheet" type="text/css" href="css/coolors.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
     <!-- company's title with logo -->
     <h2 class="animated bounceInDown"><a href="#" title="Pallete"><img src="images/palette.png"
-                alt="pallete"></a>PALLETE</h2>
+                alt="palette"></a>PALETTE</h2>
     <!-- note -->
     <p class="animated bounceInLeft">Click on spacebar to generate Colors.</p>
     <!-- menu bar -->
     <div class="menu animated fadeIn">
         <ul>
-            <li class="animated tada"><a href="#">Generate</a></li>
+            <li class="animated tada"><a href="https://shariquekhan1997.github.io/PaletteGenerator.js/">Generate</a>
+            </li>
             <!-- same page -->
-            <li class="animated tada"><a href="expnew.html" target="_blank">Explore</a></li>
+            <li class="animated tada"><a href="explore.html" target="_blank">Explore</a></li>
             <li class="animated tada"><a href="search.html" target="_blank">Search</a></li>
             <!-- right menu settings -->
             <li class="animated tada setting"><i class="fa fa-cog" aria-hidden="true"></i></li>
@@ -136,7 +137,7 @@
         else
             return newColour;
     }
-    
+
     function changeColor(buttonId, headingId, divId) {
         let newColour = generator(); //Calling generator function when clicking on button
         $(divId).css("background", newColour); //Changing the panel color
