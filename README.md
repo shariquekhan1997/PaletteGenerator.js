@@ -9,15 +9,7 @@ Click on spacebar to change all the colors to create your custom palette and use
 ## Features :gem:
 - Single Spacebar click to change all the colors at once.
 - Can change single color by clicking on Change button.
-- Explore: explore the presets available.
-- Search: search a color and get their shades.
 - Isolate and Non-Isolate mode.
-
-## Explore :volcano:
-![Explore Page](https://i.ibb.co/k5Tn8Mf/explore.png)
-
-## Search :thought_balloon:
-![Search Page](https://i.ibb.co/dKXcGPX/search.png)
 
 ## Isolate Mode :barber: :barber:
 ![Isolate](https://i.ibb.co/txfcmS1/isolate.png)
