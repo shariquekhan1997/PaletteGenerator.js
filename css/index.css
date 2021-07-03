@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: "cursive !important";
 }
 
 body {
@@ -29,7 +30,6 @@ h1 {
 	font-size: 6vmin;
 	height: 1.5em;
 	color: #1f2d3d;
-	font-family: cursive;
 }
 
 #change, #change2, #change3, #change4, #change5 {
@@ -38,12 +38,10 @@ h1 {
 	outline: none;
 	font-weight: lighter;
 	font-size: 1em;
-	font-family: cursive;
 	background: #1f2d3d;
 	color: #fff;
 	border-radius: 20px;
 	cursor: pointer;
-	/*display: none;*/
 }
 
 body, button#change, button#change2, button#change3, button#change4, button#change5 {
@@ -52,7 +50,6 @@ body, button#change, button#change2, button#change3, button#change4, button#chan
 
 .layer {
 	position: absolute;
-	/*top:12vw;*/
 	top: 27%;
 	bottom: 0;
 	width: 20vw;
@@ -155,19 +152,6 @@ p {
 .menu a:hover {
 	color: #333;
 }
-
-.theme {
-	position: absolute;
-	top: 10%;
-	left: 80%;
-	border: 1px solid #333;
-	animation-delay: 1000ms;
-}
-
-/*.togglewidth{
-	width:16vw;
-}
-*/
 
 @media (max-width: 1097px) {
 	#change, #change2, #change3, #change4, #change5 {
