@@ -86,7 +86,7 @@
 <script type="text/javascript">
     //Jquery function for settings isolation and no-isolation in jquery
     $(function () {
-        //BY default both options are hidden
+        //By default both options are hidden
         $(".isolation").hide();
         $(".no-isolation").hide();
         $(".setting").on('click', function () {
@@ -126,7 +126,6 @@
         } else if (e.ctrlKey && e.keyCode == 73) {
             alert("ctrl + i");
         }
-
     };
     //JS function for all panels to generate random colors
     generator = () => {
@@ -138,7 +137,7 @@
             return newColour;
     }
 
-    function changeColor(buttonId, headingId, divId) {
+    changeColor = (buttonId, headingId, divId) => {
         let newColour = generator(); //Calling generator function when clicking on button
         $(divId).css("background", newColour); //Changing the panel color
         //button1.style.color = newColour; //alternative to below
