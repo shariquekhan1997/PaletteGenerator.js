@@ -8,17 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
     <!-- jquery google cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- animation css -->
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <!-- icons -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Pallete</title>
+    <!-- animation css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <!-- external css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <!-- company's title with logo -->
     <h2 class="animated bounceInDown" onclick="changeAllColorsForMobile()"><a href="#" title="Pallete"><img
                 src="images/palette.png" alt="palette"></a>PALETTE</h2>
@@ -40,44 +40,44 @@
     <div class="wrap">
         <!-- wrap start -->
         <!-- 1st Panel -->
-        <div id="parent" class="animated fadeIn layer togglewidth">
+        <div id="parent" class="parent1 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
-                <h1 id="colour">#EAC8CA</h1>
+                <p class="colorName" id="colour">#EAC8CA</p>
                 <button id="change" type="button" onclick="changeColor('#change', '#colour', '#parent')">Change</button>
             </div>
         </div>
         <!-- 2nd Panel -->
-        <div id="parent2" class="animated fadeIn layer togglewidth">
+        <div id="parent2" class="parent2 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
-                <h1 id="colour2">#F2D5F8</h1>
+                <p class="colorName" id="colour2">#F2D5F8</p>
                 <button id="change2" type="button"
                     onclick="changeColor('#change2', '#colour2', '#parent2')">Change</button>
             </div>
         </div>
         <!-- 3rd Panel -->
-        <div id="parent3" class="animated fadeIn layer togglewidth">
+        <div id="parent3" class="parent3 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
-                <h1 id="colour3">#E6C0E9</h1>
+                <p class="colorName" id="colour3">#E6C0E9</p>
                 <button id="change3" type="button"
                     onclick="changeColor('#change3', '#colour3', '#parent3')">Change</button>
             </div>
         </div>
         <!-- 4th Panel -->
-        <div id="parent4" class="animated fadeIn layer togglewidth">
+        <div id="parent4" class="parent4 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
-                <h1 id="colour4">#BFABCB</h1>
+                <p class="colorName" id="colour4">#BFABCB</p>
                 <button id="change4" type="button"
                     onclick="changeColor('#change4', '#colour4', '#parent4')">Change</button>
             </div>
         </div>
         <!-- Panel 5 -->
-        <div id="parent5" class="animated fadeIn layer togglewidth">
+        <div id="parent5" class="parent5 animated fadeIn layer togglewidth mobileSection">
             <div class="wrapper animated bounceIn">
-                <h1 id="colour5">#8D89A6</h1>
+                <p class="colorName" id="colour5">#8D89A6</p>
                 <button id="change5" type="button"
                     onclick="changeColor('#change5', '#colour5', '#parent5')">Change</button>
             </div>
-        </div> <!-- parent 5 end -->
+        </div>
     </div> <!-- wrap -->
 </body>
 <script type="text/javascript">
@@ -122,6 +122,24 @@
             button5.click(); //change5
         }
     };
+
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
     //for mobile
     changeAllColorsForMobile = () => {
         let functionName = "changeAllColorsForMobile";
