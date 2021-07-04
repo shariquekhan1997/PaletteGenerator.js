@@ -2,7 +2,7 @@
 
 Create your custom palette with single a click!
 
-![Main Page](https://i.ibb.co/sy9YKYw/main.png)
+![Main Page](https://i.ibb.co/thDCCwN/homepage.png)
 
 # Usage :thinking:
 Click on spacebar to change all the colors to create your custom palette and use them in your websites by copying and pasting the Hex Color Code.
@@ -20,7 +20,7 @@ v0.2
 
 ## Isolate Mode :barber: :barber:
 
-![Isolate](https://i.ibb.co/txfcmS1/isolate.png)
+![Isolate](https://i.ibb.co/Jryh3Rr/isolatemode.png)
 
 ## We are live on Github Page! 👓
 
@@ -32,4 +32,4 @@ This project and everyone participating in it is governed by the [Contributor Co
 
 ## Contributing :inbox_tray:
 
-Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [flex-basis, justify-cotnent, etc]) and let us see a demo of submitted classes in a [pen](http://codepen.io). That **last one is important**.
+Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [flex-basis, justify-cotnent, etc], no redundant codes) and let us see a demo of in a [pen](http://codepen.io). We also have a prototype of this project on [codepen](https://codepen.io/sharique-khan/pen/jOmbmOO) where you guys can do your thing!
