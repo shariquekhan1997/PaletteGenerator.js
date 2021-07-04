@@ -13,6 +13,7 @@ v0.1
 - Single Spacebar click to change all the colors at once.
 - Can change single color by clicking on Change button.
 - Isolate and Non-Isolate mode.
+
 v0.2
 - Mobile UI Change
 - Mobile Support Added, now this powerful tool comes in your hand!
