@@ -28,7 +28,7 @@ v0.2
 
 ## Code of Conduct :scroll:
 
-This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [shariquekhan69.sk@gmail.com](mailto:shariquekhan69.sk@gmail.com).
+This project and everyone participating in it is governed by the [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [shariquekhan69.sk@gmail.com](mailto:shariquekhan69.sk@gmail.com).
 
 ## Contributing :inbox_tray:
 
