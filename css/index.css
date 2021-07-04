@@ -32,6 +32,7 @@ p {
 
 .menu {
 	animation-delay: 1000ms;
+	visibility: visible;
 }
 
 .menu ul {
@@ -147,12 +148,6 @@ body, button#change, button#change2, button#change3, button#change4, button#chan
 }
 
 @media (max-width: 768px) {
-	/* .colorName {
-		writing-mode: tb-rl;
-		margin-bottom: 5em;
-		margin-left: 1em;
-		font-size: 6vmin;
-	} */
 	button[type="button"] {
 		padding: .5em;
 	}
@@ -162,6 +157,9 @@ body, button#change, button#change2, button#change3, button#change4, button#chan
 }
 
 @media (max-width: 427px) {
+	.menu {
+		visibility: hidden;
+	}
 	.wrap {
 		padding: 0;
 		margin: 0;
