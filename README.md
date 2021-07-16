@@ -4,17 +4,14 @@ Create your custom palette with single a click!
 
 ![Main Page](https://i.ibb.co/thDCCwN/homepage.png)
 
-# Usage :thinking:
+## Usage :thinking:
 Click on spacebar to change all the colors to create your custom palette and use them in your websites by copying and pasting the Hex Color Code.
 
 ## Features :gem:
 
-v0.1
 - Single Spacebar click to change all the colors at once.
 - Can change single color by clicking on Change button.
 - Isolate and Non-Isolate mode.
-
-v0.2
 - Mobile UI Change
 - Mobile Support Added, now this powerful tool comes in your hand!
 
@@ -33,3 +30,5 @@ This project and everyone participating in it is governed by the [![Contributor 
 ## Contributing :inbox_tray:
 
 Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [flex-basis, justify-cotnent, etc], no redundant codes) and let us see a demo of in a [pen](http://codepen.io). We also have a prototype of this project on [codepen](https://codepen.io/sharique-khan/pen/jOmbmOO) where you guys can do your thing!
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/shariquekhan1997/PaletteGenerator.js)
