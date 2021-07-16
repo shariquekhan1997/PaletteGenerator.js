@@ -30,9 +30,6 @@ This project and everyone participating in it is governed by the [![Contributor 
 ## Contributing :inbox_tray:
 
 Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [flex-basis, justify-cotnent, etc], no redundant codes) and let us see a demo of in a [pen](http://codepen.io). We also have a prototype of this project on [codepen](https://codepen.io/sharique-khan/pen/jOmbmOO) where you guys can do your thing!
-<<<<<<< HEAD
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/shariquekhan1997/PaletteGenerator.js)
-=======
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/shariquekhan1997/PaletteGenerator.js)
->>>>>>> 28f86cfe50542a217fc66210a881ff53cb64fd66
+
