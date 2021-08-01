@@ -5,14 +5,13 @@ Create your custom palette with single a click!
 ![Main Page](https://i.ibb.co/thDCCwN/homepage.png)
 
 ## Usage :thinking:
-Click on spacebar to change all the colors to create your custom palette and use them in your websites by copying and pasting the Hex Color Code.
+Click on spacebar to change all the colors and create your own custom palette that you can use in your websites.
 
 ## Features :gem:
 
 - Single Spacebar click to change all the colors at once.
 - Can change single color by clicking on Change button.
 - Isolate and Non-Isolate mode.
-- Mobile UI Change
 - Mobile Support Added, now this powerful tool comes in your hand!
 
 ## Isolate Mode :barber: :barber:
