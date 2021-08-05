@@ -2,7 +2,7 @@
 name: "\U0001F41B Bug Report"
 about: "Bugs, missing documentation, or unexpected behavior \U0001F914"
 title: ''
-labels: bug
+labels: unconfirmed-bug
 assignees: shariquekhan1997
 
 ---
