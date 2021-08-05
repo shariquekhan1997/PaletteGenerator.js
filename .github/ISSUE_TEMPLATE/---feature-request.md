@@ -2,7 +2,7 @@
 name: "\U0001F4A1 Feature request"
 about: Ideas and suggestions
 title: ''
-labels: enhancement
+labels: "ideas \U0001F914"
 assignees: shariquekhan1997
 
 ---
