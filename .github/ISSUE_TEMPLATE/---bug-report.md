@@ -1,6 +1,6 @@
 ---
 name: "\U0001F41B Bug Report"
-about: Help us improve
+about: "Bugs, missing documentation, or unexpected behavior \U0001F914"
 title: ''
 labels: bug
 assignees: shariquekhan1997
