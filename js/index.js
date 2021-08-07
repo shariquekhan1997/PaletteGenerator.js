@@ -55,7 +55,6 @@ $(function () {
   });
 });
 
-
 //when spacebar is clicked these 5 buttons are clicked
 document.onkeyup = function (e) {
   if (e.code == "Space") { // spacebar keycode = 32

@@ -35,6 +35,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+**/node_modules
 
 # Others
 ClientBin/
