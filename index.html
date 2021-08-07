@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
     <!-- jquery google cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/35d3d8c448.js" crossorigin="anonymous"></script>
     <!-- icons -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -16,12 +17,15 @@
     <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <!-- external css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- external js -->
+    <script src="js/index.js"></script>
 </head>
+<!-- oncontextmenu="return false" -->
 
-<body oncontextmenu="return false">
+<body data-theme="light">
     <!-- company's title with logo -->
     <h2 class="animated bounceInDown" onclick="changeAllColorsForMobile()"><a href="#" title="Pallete"><img
-                src="images/palette.png" alt="palette"></a>PALETTE</h2>
+                src="images/palette.png" alt="palette" title="Palette"></a>PALETTE</h2>
     <!-- note -->
     <p class="animated bounceInLeft">Click on spacebar or PALETTE to generate Colors.</p>
     <!-- menu bar -->
@@ -30,7 +34,10 @@
             <!-- <li class="animated tada"><a href="https://shariquekhan1997.github.io/PaletteGenerator.js/">Generate</a> -->
             </li>
             <!-- right menu settings -->
-            <li class="animated tada setting"><i class="fa fa-cog" aria-hidden="true"></i></li>
+            <li class="animated tada setting" title="Click for isolation menu">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </li>
+            <li class="animated tada theme-toggle" title="Set Dark Mode"><i class="icon-toggle fas fa-sun"></i></li>
             <p class="isolation">Isolation</p>
             <!-- Isolation -->
             <p class="no-isolation">No Isolation</p>
@@ -80,96 +87,9 @@
         </div>
     </div> <!-- wrap -->
 </body>
-<script type="text/javascript">
-    //Jquery function for settings isolation and no-isolation in jquery
-    $(function () {
-        //By default both options are hidden
-        $(".isolation").hide();
-        $(".no-isolation").hide();
-        $(".setting").on('click', function () {
-            $(".isolation, .no-isolation").toggle(); //Shows/hides when clicked on settings
-        });
-        //it created gap between the panels
-        $(".isolation").on('click', function () {
-            $(".togglewidth").css('width', '16vw'); //giving css width to class
-            $(".layer").toggleClass('.togglewidth'); //Applying that class
-            $(".isolation").hide();
-            $(".no-isolation").hide();
-        });
-        //it hides the gap between the panels
-        $(".no-isolation").on('click', function () {
-            $(".togglewidth").css('width', '20vw'); //Giving css width to class
-            $(".layer").toggleClass('.togglewidth'); //Apllying that class
-            $(".isolation").hide();
-            $(".no-isolation").hide();
-        });
-    });
 
-    //spacebar click function
-    //selecting id in a variable for keycode function.
-    var button1 = document.getElementById("change");
-    var button2 = document.getElementById("change2");
-    var button3 = document.getElementById("change3");
-    var button4 = document.getElementById("change4");
-    var button5 = document.getElementById("change5");
-    //when spacebar is clicked these 5 buttons are clicked
-    document.onkeyup = function (e) {
-        if (e.keyCode == 32) { // spacebar keycode = 32
-            button1.click(); //change1
-            button2.click(); //change2
-            button3.click(); //change3
-            button4.click(); //change4
-            button5.click(); //change5
-        }
-    };
+<script>
 
-    document.onkeydown = function (e) {
-        if (event.keyCode == 123) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-            return false;
-        }
-        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-            return false;
-        }
-    }
-    //for mobile
-    changeAllColorsForMobile = () => {
-        let functionName = "changeAllColorsForMobile";
-        try {
-            button1.click(); //change1
-            button2.click(); //change2
-            button3.click(); //change3
-            button4.click(); //change4
-            button5.click(); //change5
-        } catch (error) {
-            alert(functionName + ": " + error.message);
-        }
-    }
-    //JS function for all panels to generate random colors
-    generator = () => {
-        // .tostring because characters and numbers can come //Math.random() creates random numbers
-        newColour = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
-        if (newColour.length < 7)
-            generator(); //calling function
-        else
-            return newColour;
-    }
-
-    changeColor = (buttonId, headingId, divId) => {
-        let newColour = generator(); //Calling generator function when clicking on button
-        $(divId).css("background", newColour); //Changing the panel color
-        //button1.style.color = newColour; //alternative to below
-        $(buttonId).css('color', newColour); //Changing the button-text color "change"
-        $(headingId).text(newColour); //Name of color generated to copy
-    }
 </script>
 
 </html>
