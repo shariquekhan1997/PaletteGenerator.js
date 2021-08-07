@@ -10,6 +10,16 @@
 # Common Credential files
 **/credentials.json
 
+#github
+.github/
+**/.github
+
+#test files
+**/test
+test.js
+test.html
+test.css
+
 
 # Private Files
 *.json
